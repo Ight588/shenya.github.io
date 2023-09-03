@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Craft Gothic';
-    src: local('Craft Gothic Condensed'), local('Craft-Gothic-Condensed'),
-        url('CraftGothic-Condensed.woff2') format('woff2'),
-        url('CraftGothic-Condensed.woff') format('woff'),
-        url('CraftGothic-Condensed.ttf') format('truetype');
+    src: local('Craft Gothic Semi Condensed'), local('Craft-Gothic-Semi-Condensed'),
+        url('CraftGothic-SemiCondensed.woff2') format('woff2'),
+        url('CraftGothic-SemiCondensed.woff') format('woff'),
+        url('CraftGothic-SemiCondensed.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -69,4 +69,27 @@ p {
 
 #infoText {
 	height: 45%;
+}
+
+input, textarea {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Craft Gothic';
+	color: white;
+	text-shadow: #e27ece 3px 2px 0px;
+}
+
+textarea {
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+::placeholder {
+    color: white;
 }
