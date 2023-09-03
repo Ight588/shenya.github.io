@@ -1,29 +1,27 @@
 @font-face {
-    font-family: 'Craft Gothic';
-    src: local('Craft Gothic Semi Condensed'), local('Craft-Gothic-Semi-Condensed'),
-        url('CraftGothic-SemiCondensed.woff2') format('woff2'),
-        url('CraftGothic-SemiCondensed.woff') format('woff'),
-        url('CraftGothic-SemiCondensed.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Futura Condenced';
-	src: local('Futura Condenced'),
-		url('Futura_Condenced-Normal.ttf') format('ttf');
+	font-family: 'Craft Gothic';
+	src: local('Craft Gothic Semi Condensed'),
+		url('CraftGothic-SemiCondensed.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
-  :root {
+@font-face {
+	font-family: 'Futura Condenced';
+	src: local('FuturaBookC'),
+		url('FuturaBookC.woff') format('woff');
+}
+
+:root {
 	--border: solid white 2px;
-	--font-family: 		
-		"Craft Gothic", 
+	--font-family:
+		"Craft Gothic",
 		"Futura Condenced",
 		sans-serif;
 }
 
-body { 
-	background-color: #1d1f20; 
+body {
+	background-color: #1d1f20;
 	display: flex;
 	justify-content: center;
 }
@@ -81,14 +79,15 @@ p {
 	height: 45%;
 }
 
-input, textarea {
-    background: none;
-    border: none;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size: 40px;
-    font-family: var(--font-family);
+input,
+textarea {
+	background: none;
+	border: none;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 40px;
+	font-family: var(--font-family);
 	color: white;
 	text-shadow: #e27ece 3px 2px 0px;
 }
@@ -97,7 +96,7 @@ textarea {
 	position: relative;
 	display: block;
 	margin: auto;
-    overflow: hidden;
+	overflow: hidden;
 	resize: none;
 }
 
@@ -112,7 +111,7 @@ textarea {
 	flex-direction: column-reverse;
 }
 
-output { 
+output {
 	font-size: smaller;
 	width: 80%;
 	margin-left: auto;
@@ -146,7 +145,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 ::placeholder {
-    color: white;
+	color: white;
 }
 
 .mainInfoRow {
