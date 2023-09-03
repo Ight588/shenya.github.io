@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head>  
         <meta charset="utf-8">
         <title>YanSim Profile Thing | Shenya's Corner</title>
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
+    <div class="siteTitle">
+        <h2>Very interesting text.</h2>
+    </div>
+    <div class="mainBlock">
+        <h2>What is this?</h2>
+        <p>No idea.</p>
+        <h2>What to do?</h2>
+        <p> Click on stuff. Type text. Photoshop in your portrait yourself.</p>
+        <h2>The template itself</h2>
         <div class="mainContainter">
-            <table>
+            <table class="202XTable">
                 <tbody>
                     <tr>
                         <td class="mainInfoRow" rowspan="2">
@@ -18,7 +27,9 @@
                                 <input type="text" id="persona" placeholder="Class N-N" />
                             </p>
                         </td>
-                        <td class="mainInfoRow">Reputation</td>
+                        <td class="mainInfoRow">
+                            <input type="text" placeholder="Reputation" />
+                        </td>
                         <td>
                             <div id="repInput">
                                 <datalist id="range-list">
@@ -32,32 +43,42 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="mainInfoRow">Personality</td>
+                        <td class="mainInfoRow">
+                            <input type="text" placeholder="Personality" />
+                        </td>
                         <td class="mainInfoRow">
                             <input type="text" id="persona" />
                         </td>
                     </tr>
                     <tr>
                         <td rowspan="5"></td>
-                        <td class="mainInfoRow">Crush</td>
+                        <td class="mainInfoRow">
+                            <input type="text" placeholder="Crush" />
+                        </td>                            
                         <td class="mainInfoRow">
                             <input type="text" id="crush" />
                         </td>
                     </tr>
                     <tr>
-                        <td class="mainInfoRow">Club</td>
+                        <td class="mainInfoRow">
+                            <input type="text" placeholder="Club" />
+                        </td>
                         <td class="mainInfoRow">
                             <input type="text" id="club" />
                         </td>
                     </tr>
                     <tr>
-                        <td class="mainInfoRow">Self-Defense</td>
+                        <td class="mainInfoRow">
+                            <input type="text" placeholder="Self-Defense" />
+                        </td>
                         <td class="mainInfoRow">
                             <input type="text" id="self-defense" />
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" id="info">Additional Information</td>
+                        <td colspan="2" id="info">
+                            <input type="text" placeholder="Additional Information" />
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="2" id="infoText">
@@ -67,5 +88,16 @@
                 </tbody>
             </table>
         </div>
+    </div>
+    <div class="sideBlock">
+        <div class="blockLinks">
+            <h2>Links</h2>
+            <p>Wait for them!</p>
+        </div>
+        <div class="blockCat">
+            <h2>Cat</h2>
+            <p>Soon there will be a cat.</p>
+        </div>
+    </div>
     </body>
 </html>
