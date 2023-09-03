@@ -25,6 +25,7 @@
 
 body {
 	color: #f9f9f9; 
+	background-color: #1d1f20; 
 	font-family: 'Roboto', sans-serif;
 	display: grid;
 	grid-template-columns: 15% 20% auto 300px 15%;
