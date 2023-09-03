@@ -7,3 +7,66 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  :root {
+	--border: solid white 2px;
+}
+
+body { 
+	background-color: #1d1f20; 
+	display: flex;
+	justify-content: center;
+}
+
+.mainContainter {
+	width: 1035px;
+	height: 605px;
+	margin-top: 50px;
+	background-color: #ffa6ff;
+	box-sizing: border-box;
+	border-left: var(--border);
+	display: flex;
+	text-align: center;
+	color: white;
+	text-shadow: #e27ece 3px 2px 0px;
+	font-family: 'Craft Gothic';
+	vertical-align: middle;
+}
+
+table {
+	width: 100%;
+	height: 100%;
+	border-top: var(--border);
+	border-collapse: collapse;
+	font-size: 40px;
+}
+
+td[rowspan="2"] {
+	width: 50%;
+}
+
+td {
+	border-right: var(--border);
+	border-bottom: var(--border);
+}
+
+p {
+	margin: 0px;
+}
+
+#name {
+	font-size: 55px;
+}
+
+#class {
+	font-size: 30px;
+}
+
+#info {
+	height: 5%;
+	font-size: 30px;
+}
+
+#infoText {
+	height: 45%;
+}
