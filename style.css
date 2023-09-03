@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
 @font-face {
     font-family: 'Craft Gothic';
     src: local('Craft Gothic Semi Condensed'), local('Craft-Gothic-Semi-Condensed'),
@@ -22,14 +25,42 @@
 
 body { 
 	background-color: #1d1f20; 
-	display: flex;
-	justify-content: center;
+	color: #f9f9f9; 
+	font-family: 'Roboto', sans-serif;
+	display: grid;
+	grid-template-columns: 50% auto 300px;
+	grid-template-areas: 
+		"header header header"
+		"main main sidebar"
+		"main main sidebar";
 }
 
+h2 {
+	font-family: 'MuseoModerno';
+}
+
+.siteTitle { 
+	font-weight: 600;
+	grid-area: header;
+	height: 80px;
+	background: #523882;
+	padding-left: 40px;
+}
+
+.mainBlock {
+	grid-area: main;
+}
+
+.sideBlock { 
+	grid-area: sidebar;
+	background-color: #343536;
+	padding-left: 15px;
+}
+
+/* The template itself */
 .mainContainter {
 	width: 1035px;
 	height: 605px;
-	margin-top: 50px;
 	background-color: #ffa6ff;
 	box-sizing: border-box;
 	border-left: var(--border);
