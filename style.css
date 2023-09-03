@@ -93,3 +93,7 @@ textarea {
 ::placeholder {
     color: white;
 }
+
+.mainInfoRow {
+	width: 25%;
+}
