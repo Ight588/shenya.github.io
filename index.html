@@ -19,14 +19,14 @@
                             </p>
                         </td>
                         <td>Reputation</td>
-                        <td>
+                        <td id="repInput">
                             <datalist id="range-list">
                                 <option value="-33"></option>
                                 <option value="0"></option>
                                 <option value="+33"></option>
                             </datalist>
-                            <output>0</output>
                             <input type="range" id="reputation"/ min="-100" max="100" step="1" list="range-list" oninput="this.nextElementSibling.value = this.value">
+                            <output>0</output>
                         </td>
                     </tr>
                     <tr>
