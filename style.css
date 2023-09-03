@@ -8,6 +8,16 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Futura Condensed Normal';
+    src: url('Futura_Condenced-Normal.eot');
+    src: url('Futura_Condenced-Normal.eot?#iefix') format('embedded-opentype'),
+    url('Futura_Condenced-Normal.woff') format('woff'),
+    url('Futura_Condenced-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
   :root {
 	--border: solid white 2px;
 }
@@ -29,7 +39,9 @@ body {
 	text-align: center;
 	color: white;
 	text-shadow: #e27ece 3px 2px 0px;
-	font-family: 'Craft Gothic';
+	font-family: 
+		"Futura Condensed Normal", 
+		sans-serif;
 	vertical-align: middle;
 }
 
