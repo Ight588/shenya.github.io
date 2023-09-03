@@ -9,17 +9,17 @@
   }
 
   @font-face {
-    font-family: 'Futura Condensed Normal';
-    src: url('Futura_Condenced-Normal.eot');
-    src: url('Futura_Condenced-Normal.eot?#iefix') format('embedded-opentype'),
-    url('Futura_Condenced-Normal.woff') format('woff'),
-    url('Futura_Condenced-Normal.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Futura Condenced';
+	src: local('Futura Condenced'),
+		url('Futura_Condenced-Normal.ttf') format('ttf');
 }
 
   :root {
 	--border: solid white 2px;
+	--font-family: 		
+		"Craft Gothic", 
+		"Futura Condenced",
+		sans-serif;
 }
 
 body { 
@@ -39,9 +39,7 @@ body {
 	text-align: center;
 	color: white;
 	text-shadow: #e27ece 3px 2px 0px;
-	font-family: 
-		"Futura Condensed Normal", 
-		sans-serif;
+	font-family: var(--font-family);
 	vertical-align: middle;
 }
 
@@ -90,7 +88,7 @@ input, textarea {
     height: 100%;
     text-align: center;
     font-size: 40px;
-    font-family: 'Craft Gothic';
+    font-family: var(--font-family);
 	color: white;
 	text-shadow: #e27ece 3px 2px 0px;
 }
