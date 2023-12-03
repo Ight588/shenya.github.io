@@ -137,6 +137,10 @@ div#portrait {
 		border-right: var(--border);
 }
 
+#portrait>img {
+	height: 486px !important;
+}
+
 .rightRow {
 	height: 100%;
 }
@@ -232,5 +236,5 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .why {
 	width: 90%;
-	color: rgba(255, 255, 255, 0.02);
+	color: rgba(255, 255, 255, 0.05);
 }
