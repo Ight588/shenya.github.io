@@ -4,6 +4,14 @@
         <meta charset="utf-8">
         <title>YanSim Profile Thing | Shenya's Corner</title>
         <link href="style.css" rel="stylesheet">
+        <script>
+            function insertImage() {
+              const imageUrl = document.getElementById("image-url").value;
+              const imgElement = document.createElement("img");
+              imgElement.src = imageUrl;
+              document.getElementById("portrait").appendChild(imgElement);
+            }
+          </script>          
     </head>
     <body>
     <div class="siteTitle">
@@ -11,82 +19,89 @@
     </div>
     <div class="mainBlock">
         <h2>What is this?</h2>
-        <p>No idea.</p>
+        <p>I was bored. That's pretty much the whole story.</p>
+        <p>If you found it somehow, you probably know what this is for already anyway.</p>
         <h2>What to do?</h2>
-        <p> Click on stuff. Type text. Photoshop in your portrait yourself.</p>
+        <p>Click on wherever you need to write. Write. If you need to insert a portrait, post it literally anywhere (even your Discord DMs or Google Drive will do fine I think), press right mouse button on image and copy its URL. Then insert in the form below and press the button.</p>
+        <p>Don't worry, this is not going to be saved anywhere. I'm not a madman to keep all this... <i>stuff</i> in my GitHub repository or whatever, lol.</p>
+        <p>Just don't forget to make a screenshot before reloading the page.</p>
+        <br>
+        <div>
+            <form id="imgForm">
+                <label for="image-url">Image URL:</label>
+                <input type="text" id="image-url" name="image-url">
+                <button type="button" onclick="insertImage()">Insert Image</button>
+            </form>
+        </div>
         <h2>The template itself</h2>
         <div class="mainContainter">
-            <table class="202XTable">
-                <tbody>
-                    <tr>
-                        <td class="mainInfoRow" rowspan="2">
-                            <p id="name">
-                                <input type="text" id="name" placeholder="Student Name" />
-                            </p>
-                            <p id="class">
-                                <input type="text" id="persona" placeholder="Class N-N" />
-                            </p>
-                        </td>
-                        <td class="mainInfoRow">
-                            <input type="text" placeholder="Reputation" />
-                        </td>
-                        <td>
-                            <div id="repInput">
-                                <datalist id="range-list">
-                                <option value="-33"></option>
-                                <option value="0"></option>
-                                <option value="33"></option>
-                                </datalist>
-                                <input type="range" id="reputation"/ min="-100" max="100" step="1" list="range-list" oninput="this.nextElementSibling.value = this.value">
-                                <output>0</output>
+            <div class="templateContainer">
+                <div class="leftRow">
+                    <div class="upperLeftRow">
+                        <div id="name">
+                            <input type="text" id="name" placeholder="Student Name" />
+                        </div>
+                        <div id="class">
+                            <input type="text" id="class" placeholder="Class N-N" />
+                        </div>
+                    </div>
+                    <div id="portrait"></div>
+                </div>
+                <div class="rightRow">
+                    <div class="upperRightRow">
+                        <div class="leftSubrow">
+                            <div>
+                                <input type="text" placeholder="Reputation" />
                             </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="mainInfoRow">
-                            <input type="text" placeholder="Personality" />
-                        </td>
-                        <td class="mainInfoRow">
-                            <input type="text" id="persona" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td rowspan="5"></td>
-                        <td class="mainInfoRow">
-                            <input type="text" placeholder="Crush" />
-                        </td>                            
-                        <td class="mainInfoRow">
-                            <input type="text" id="crush" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="mainInfoRow">
-                            <input type="text" placeholder="Club" />
-                        </td>
-                        <td class="mainInfoRow">
-                            <input type="text" id="club" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="mainInfoRow">
-                            <input type="text" placeholder="Self-Defense" />
-                        </td>
-                        <td class="mainInfoRow">
-                            <input type="text" id="self-defense" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" id="info">
+                            <div>
+                                <input type="text" placeholder="Personality" />
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Crush" />
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Club" />
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Self-Defense" />
+                            </div>
+                        </div>
+                        <div class="rightSubrow">
+                            <div id="rep">
+                                <span id="repInput">
+                                    <datalist id="range-list">
+                                    <option value="-33"></option>
+                                    <option value="0"></option>
+                                    <option value="33"></option>
+                                    </datalist>
+                                    <input type="range" id="reputation"/ min="-100" max="100" step="1" list="range-list" oninput="this.nextElementSibling.value = this.value">
+                                    <output>0</output>
+                                </span>
+                            </div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomRightRow">
+                        <div id="infoTitle">
                             <input type="text" placeholder="Additional Information" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" id="infoText">
+                        </div>
+                        <div id="info">
                             <textarea id="infoInput" name="infoInput"></textarea>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="sideBlock">
@@ -96,7 +111,13 @@
         </div>
         <div class="blockCat">
             <h2>Cat</h2>
-            <p>Soon there will be a cat.</p>
+            <img src="https://sun9-5.userapi.com/impg/zVaF_bxcdZGlu8-MDoQntYi_7kbKdNhfVp3Qnw/BEUi64EWaPM.jpg?size=1024x1024&quality=96&sign=5012fbf45a54a483ccc0a0d8436a4cde&type=album" style="width: 90%;"></img>
+            <div class="why">
+                <p><i>I'm wasting my life on useless things no one including myself really cares about. Why do I keep avoiding facing the reality? I know perfectly where it is leading me to, yet I'm still here, making everything only worse day by day.</i></p>
+                <p><i>Will anything ever change?</i></p>
+                <p><i>I'm starting to doubt at this point.</i></p>
+                <p><i>I'm so sick of myself.</i></p>
+            </div>
         </div>
     </div>
     </body>

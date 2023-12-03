@@ -57,14 +57,38 @@ h2 {
 	padding-left: 15px;
 }
 
-/* The template itself */
-.mainContainter {
+form label {
+	font-family: 'MuseoModerno';
+	font-weight: bold;
+	font-size: large;
+	margin-right: 10px;
+}
+
+input#image-url {
+	width: 300px;
+	height: 1.5em;
+	border: 1px solid gray;
+	font: initial;
+	font-family: sans-serif;
+	text-shadow: none;
+}
+
+#imgForm button {
+	background: #523882 !important;
+	color: whitesmoke;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9em;
+	border: none;
+	padding: 5px !important;
+}
+
+.templateContainer {
+	display: flex;
 	width: 1035px;
 	height: 605px;
+	margin: 15px;
 	background-color: #ffa6ff;
-	box-sizing: border-box;
-	border-left: var(--border);
-	display: flex;
+	border: var(--border);
 	text-align: center;
 	color: white;
 	text-shadow: #e27ece 3px 2px 0px;
@@ -72,43 +96,10 @@ h2 {
 	vertical-align: middle;
 }
 
-table {
-	width: 100%;
-	height: 100%;
-	border-top: var(--border);
-	border-collapse: collapse;
-	font-size: 40px;
-}
-
-td[rowspan="2"] {
+.leftRow, .rightRow {
 	width: 50%;
-}
+}	
 
-td {
-	border-right: var(--border);
-	border-bottom: var(--border);
-}
-
-p {
-	margin: 0px;
-}
-
-#name {
-	font-size: 55px;
-}
-
-#class {
-	font-size: 30px;
-}
-
-#info {
-	height: 5%;
-	font-size: 30px;
-}
-
-#infoText {
-	height: 45%;
-}
 
 input, textarea {
     background: none;
@@ -122,6 +113,73 @@ input, textarea {
 	text-shadow: #e27ece 3px 2px 0px;
 }
 
+
+#name {
+	font-size: 55px;
+}
+
+	div#name {
+		font-size: 55px;
+		border-right: var(--border);
+	}
+
+#class {
+	font-size: 30px;
+}
+
+	div#class {
+		border-right: var(--border);
+		border-bottom: var(--border);
+	}
+
+div#portrait {
+		height: 80%;
+		border-right: var(--border);
+}
+
+.rightRow {
+	height: 100%;
+}
+
+.upperRightRow {
+	display: flex;
+	height: 60%;
+}
+
+.bottomRightRow {
+	height: 45% !important;
+	margin-top: -5%;
+}
+
+.leftSubrow, .rightSubrow {
+	width: 50% !important;
+}
+
+.leftSubrow div {
+	height: 18%;
+	border-right: var(--border);
+	border-bottom: var(--border);
+}
+
+.rightSubrow div {
+	height: 18%;
+	border-bottom: var(--border);
+}
+
+#infoTitle>input {
+	height: 10% !important;
+	font-size: 2em !important;
+	border-bottom: var(--border);
+}
+
+#info {
+	height: 80%;
+}
+
+#info textarea {
+	line-height: 1 !important;
+}
+
 textarea {
 	position: relative;
 	display: block;
@@ -130,23 +188,17 @@ textarea {
 	resize: none;
 }
 
-.mainInfoRow {
-	width: 25%;
-	height: 10%;
-}
-
 #repInput {
-	height: 10%;
+	height: 10% !important;
 	display: flex;
 	flex-direction: column-reverse;
 }
 
 output { 
-	font-size: smaller;
+	font-size: 2em;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	height: 40px;
 }
 
 input[type="range"] {
@@ -156,7 +208,7 @@ input[type="range"] {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: -10px;
+	margin-bottom: -40px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -178,6 +230,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     color: white;
 }
 
-.mainInfoRow {
-	width: 25%;
+.why {
+	width: 90%;
+	color: rgba(255, 255, 255, 0.02);
 }
